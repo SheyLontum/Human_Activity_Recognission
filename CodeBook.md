@@ -127,12 +127,13 @@ This is accomplished in three steps:
 
 * The data set is then ordered, first by subject and then by activity.
 
-* Finally, the tidy data frame is saved into the working directory.
+* Finally, the tidy data frame is saved into the working directory both as an R work space and as a text file.
 
 ```r
 tidy_final <- aggregate(. ~ subject + activity, mean_sd, mean)
 tidy_final <- tidy_final[order(tidy_final$subject, tidy_final$activity),]
 save(tidy_final, file = "Tidy_Data.rdata")
+write.table(tidy_final, file = "Tidy_Data.txt", row.names = FALSE)
 ```
 
 ---

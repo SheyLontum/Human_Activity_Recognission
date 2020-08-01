@@ -48,3 +48,5 @@ tidy_final <- aggregate(. ~ subject + activity, mean_sd, mean)
 tidy_final <- tidy_final[order(tidy_final$subject, tidy_final$activity),]
 # Save data frame to working directory
 save(tidy_final, file = "Tidy_Data.rdata")
+# use write.table() to print the final data into a text file
+write.table(tidy_final, file = "Tidy_Data.txt", row.names = FALSE)

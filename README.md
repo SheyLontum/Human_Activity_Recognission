@@ -15,7 +15,9 @@ This project consists of the following files:
 
 * This read me file (README.md) that describes the project and its components.
 
-* The tidy data set (Tidy_Data.rdata), details of which can be found in the Code Book (CodeBook.md).
+* The tidy data set in an R work space format (Tidy_Data.rdata), details of which can be found in the Code Book (CodeBook.md).
+
+* The tidy data set as a text file (Tidy_Data.txt)
 
 * The code book (CodeBook.md) which describes the variables, the data, and all transformations that I performed to clean up the data.
 
